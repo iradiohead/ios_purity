@@ -1,0 +1,72 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "function.h"
+
+#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
+#import "UMSocialInstagramHandler.h"
+#import "UMSocialSinaHandler.h"
+#import "UMSocialWhatsappHandler.h"
+#import "UMSocialLineHandler.h"
+#import "UMSocialTumblrHandler.h"
+
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+#define RK_IS_IPAD ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#define RK_IS_IPHONE ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad)
+//------
+//navigator bar color
+#define NAVIGATORBARCOLOR [UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1.0f]
+//custom navi bar title color
+#define NAVIGATORBAR_CUS_TITLE_COLOR BGVIEWCOLOR
+
+#define BGVIEWCOLOR [UIColor colorWithRed:34/255.0f green:34/255.0f blue:34/255.0f alpha:1.0f]
+#define TEXTCOLOR [UIColor colorWithRed:131/255.0f green:139/255.0f blue:139/255.0f alpha:1.0f]
+
+#define COMBUTTONCOLOR [UIColor colorWithRed:34/255.0f green:34/255.0f blue:34/255.0f alpha:1.0f]
+
+#define  INFOBGVIEWCOLOR [UIColor colorWithRed:80/255.0f green:85/255.0f blue:91/255.0f alpha:1.0f]
+#define  INFONAVIGACOLOR [UIColor colorWithRed:71/255.0f green:76/255.0f blue:82/255.0f alpha:1.0f]
+
+#define DarkGreen [UIColor colorWithRed:0/255.0f green:100/255.0f blue:0/255.0f alpha:1.0f]
+#define Firebrick [UIColor colorWithRed:238/255.0f green:44/255.0f blue:44/255.0f alpha:1.0f]
+#define Yellow [UIColor colorWithRed:255/255.0f green:255/255.0f blue:0/255.0f alpha:1.0f]
+#define Cornsilk [UIColor colorWithRed:255/255.0f green:248/255.0f blue:220/255.0f alpha:1.0f]
+#define LightSkyBlue [UIColor colorWithRed:141/255.0f green:182/255.0f blue:205/255.0f alpha:1.0f]
+//-------
+#define BGCOLOR0 [UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1.0f]
+#define BGCOLOR1 [UIColor colorWithRed:22/255.0f green:160/255.0f blue:133/255.0f alpha:1.0f]
+#define BGCOLOR2 [UIColor colorWithRed:234/255.0f green:222/255.0f blue:209/255.0f alpha:1.0f]
+#define BGCOLOR3 [UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]
+#define BGCOLOR4 [UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1.0f]
+#define BGCOLOR5 [UIColor colorWithRed:142/255.0f green:68/255.0f blue:173/255.0f alpha:1.0f]
+#define BGCOLOR6 [UIColor colorWithRed:243/255.0f green:156/255.0f blue:18/255.0f alpha:1.0f]
+#define BGCOLOR7 [UIColor colorWithRed:255/255.0f green:117/255.0f blue:138/255.0f alpha:1.0f]
+#define BGCOLOR8 [UIColor colorWithRed:192/255.0f green:57/255.0f blue:43/255.0f alpha:1.0f]
+#define BGCOLOR9 [UIColor colorWithRed:189/255.0f green:195/255.0f blue:199/255.0f alpha:1.0f]
+#define BGCOLOR10 [UIColor colorWithRed:182/255.0f green:161/255.0f blue:142/255.0f alpha:1.0f]
+
+#define FONTSIZE 21
+#define TEXTFONT [UIFont fontWithName:@"Avenir-Heavy" size:19]
+#define COMPTEXTFONT [UIFont fontWithName:@"Avenir-Heavy" size:16]
+
+//-----constant string---
+#define DEFAULT_TEXT @"Text Here"
+//-----archive-------
+#define EFFECT_ARCHIVE @"EFFECT.archive"
